@@ -1,0 +1,64 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c00000;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+}
+
+/* Galeria */
+.galeria {
+    display: flex;
+    flex-direction: column; /* Imagens em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    gap: 25px;              /* Espaço entre as imagens */
+}
+
+.galeria h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #c00000;
+}
+
+/* Imagens */
+.galeria img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
